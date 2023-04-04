@@ -1,0 +1,78 @@
+<header>
+    <link rel="stylesheet" type="text/css" href="2.css">
+    <nav>
+      <ul>
+        <li><a href="1.html">Home</a></li>
+        <li><a href="2.html">About</a></li>
+        <li><a href="3.html">Products</a></li>
+        <li><a href="4.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<main>
+    <h1>Products</h1>
+    <div class="store-box" id="acids">
+      <h2>Health and Fitness</h2>
+      <p> Amazon offers a range of products related to weight loss, exercise equipment, supplements, healthy eating, and wellness. Whether you're looking to get in shape or maintain a healthy lifestyle, we have everything you need.</p>
+      <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=omnihive-20&linkCode=ur2&linkId=e521fe109661669b38cd6cdf2453bfe9&camp=1789&creative=9325&index=hpc&keywords=protein powder">Health and fitness</a>
+    </div>
+
+
+    <div class="store-box" id="bases">
+      <h2>Technology and Gadgets</h2>
+      <p>Technology is constantly evolving, and we aim to keep you up to date with the latest gadgets and devices. Our products include computers, smartphones, tablets, gaming equipment, and more.</p>
+      <button class="product" id="product2">Select</button>
+    </div>
+    <div class="store-box" id="solvents">
+      <h2>Beauty and Fashion</h2>
+      <p>Looking good and feeling good go hand in hand. Our beauty and fashion products include makeup, skincare, clothing, shoes, and accessories, so you can always look your best.</p>
+      <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=omnihive-20&linkCode=ur2&linkId=56b671263c708cd5a7410e5f2787f296&camp=1789&creative=9325&index=mobile&keywords=Accessories">Accessoriesomnihive</a>
+    </div>
+    <div class="store-box" id="catalysts">
+      <h2>Home and Garden</h2>
+      <p>Your home should be a sanctuary, and our home and garden products can help you achieve that. From furniture and decor to appliances and gardening tools, we have everything you need to create the perfect living space.</p>
+      <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=omnihive-20&linkCode=ur2&linkId=4bbfc0f69c65bd906f8c161e79a23b4d&camp=1789&creative=9325&index=tools&keywords=Gardening ">Gardening </a>
+    </div>
+    <div class="store-box" id="equipment">
+      <h2>Travel and Leisure</h2>
+      <p>Everyone deserves a break from the daily grind, and our travel and leisure products can help you make the most of your free time. We offer travel booking, hotels, flights, car rentals, tours, and other leisure activities to help you relax and recharge.</p>
+      <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=omnihive-20&linkCode=ur2&linkId=f9f0b2e1dd86a0966baf26449010b58e&camp=1789&creative=9325&index=collectibles&keywords=Fun">Entertainment </a>
+    </div>
+    <div class="store-box" id="catalysts">
+        <h2>Education and Training</h2>
+        <p>We believe that learning should never stop, and our education and training products are designed to help you acquire new skills and knowledge. We offer online courses, certifications, and other educational materials to help you achieve your goals.</p>
+        <button class="product"  id="product4">Select</button>
+      </div>
+      <div class="store-box" id="equipment">
+        <h2>Personal Finance</h2>
+        <p>Our personal finance products include budgeting tools, savings accounts, credit cards, loans, and other financial services. We understand that managing your money can be stressful, so we aim to make it as easy and accessible as possible.</p>
+        <button class="product"  id="product5">Select</button>
+      </div>
+  </main>
+  
+  
+  <script src="JS.js"></script>
+  <script>
+  
+    document.querySelector('#product1').addEventListener('click', () => {
+      window.location.href = 'store.pages/acids.html';
+    });
+    document.querySelector('#product2').addEventListener('click', () => {
+      window.location.href = 'store.pages/bases.html';
+    });
+    document.querySelector('#product3').addEventListener('click', () => {
+      window.location.href = 'store.pages/solvents.html';
+    });
+    document.querySelector('#product4').addEventListener('click', () => {
+      window.location.href = 'store.pages/catalysts.html';
+    });
+    document.querySelector('#product5').addEventListener('click', () => {
+      window.location.href = 'store.pages/equipment.html';
+    });
+  </script>
+  
