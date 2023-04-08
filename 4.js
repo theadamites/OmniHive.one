@@ -54,26 +54,26 @@ const products = [
     },
     {
       name: 'Product 2',
-      description: 'This is the description for Product 2.',
+      description: '6 Months Kirkland Minoxidil 5% Extra Strength Hair Loss Regrowth Treatment Men, 12 Fl Oz (Pack of 6)',
       price: 29.99,
-      image: 'product2.jpg',
-      url: 'https://www.amazon.com/OPTIMUM-NUTRITION-Serious-Protein-Chocolate/dp/B0015R36SK/ref=sr_1_2_sspa?crid=1OLO1P8KJ1QO9&amp;keywords=protein+powder+chocolate&amp;qid=1680478660&amp;sprefix=protien+poweder+%252Caps%252C83&amp;sr=8-2-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFDVFNFMFI4UUs0VjgmZW5jcnlwdGVkSWQ9QTA5OTAxNDlCN1g5UjVDM0hTMkUmZW5jcnlwdGVkQWRJZD1BMDQzNjE2ODFYS0FRMFE3MEtLS1gmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&_encoding=UTF8&tag=omnihive-20&linkCode=ur2&linkId=a9362b657d821c17923609455eaac940&camp=1789&creative=9325'
-      
+      image: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/714WwGNZXYL._AC_SL1010_.jpg',
+      url: 'https://www.amazon.com/gp/product/B008BMOEGA/ref=ox_sc_act_title_3?smid=A3RU2BBAIJNEGB&amp;psc=1&_encoding=UTF8&tag=omnihive-20&linkCode=ur2&linkId=0242cfe3640c66f2988c15e9a5a3957f&camp=1789&creative=9325'
     },
     {
-      name: 'Product 2',
-      description: 'This is the description for Product 2.',
-      price: 29.99,
-      image: 'product2.jpg',
-      url: 'https://www.amazon.com/OPTIMUM-NUTRITION-Serious-Protein-Chocolate/dp/B0015R36SK/ref=sr_1_2_sspa?crid=1OLO1P8KJ1QO9&amp;keywords=protein+powder+chocolate&amp;qid=1680478660&amp;sprefix=protien+poweder+%252Caps%252C83&amp;sr=8-2-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFDVFNFMFI4UUs0VjgmZW5jcnlwdGVkSWQ9QTA5OTAxNDlCN1g5UjVDM0hTMkUmZW5jcnlwdGVkQWRJZD1BMDQzNjE2ODFYS0FRMFE3MEtLS1gmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&_encoding=UTF8&tag=omnihive-20&linkCode=ur2&linkId=a9362b657d821c17923609455eaac940&camp=1789&creative=9325'
-      
+      name: 'Ordinary',
+      description: 'The Ordinary Peeling Solution And Hyaluronic Face Serum! AHA 30% + BHA 2% Peeling Solution! Hyaluronic Acid 2% + B5! Help Fight Visible Blemishes And Improve The Look Of Skin Texture & Radiance!',
+      price: 20.99,
+      image: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41L1yW9TYFL._SL1000_.jpg',
+      url: 'https://www.amazon.com/gp/product/B07Q39P7W4/ref=ox_sc_act_title_1?smid=A1ZLB4YH32IG4K&amp;psc=1&_encoding=UTF8&tag=omnihive-20&linkCode=ur2&linkId=b779f6f96443569870acf5abed9975ef&camp=1789&creative=9325'
     },
   ];
    
   // Function to generate product list items
   function generateProductListItem(product) {
     const listItem = document.createElement('li');
+    
     const image = document.createElement('img');
+    image.id='img';
     const name = document.createElement('h3');
     const description = document.createElement('p');
     const price = document.createElement('p');
