@@ -121,3 +121,61 @@ const products = [
     });
   });
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function searchProducts() {
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchTerm) || product.description.toLowerCase().includes(searchTerm));
+    renderProducts(filteredProducts);
+  }
+  
+  function renderProducts(products) {
+    const productContainer = document.getElementById('products');
+    productContainer.innerHTML = '';
+  
+    products.forEach(product => {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+  
+      const productImage = document.createElement('img');
+      productImage.src = product.image;
+      productImage.alt = product.name;
+      productDiv.appendChild(productImage);
+  
+      const productName = document.createElement('h3');
+      productName.textContent = product.name;
+      productDiv.appendChild(productName);
+  
+      const productDescription = document.createElement('p');
+      productDescription.textContent = product.description;
+      productDiv.appendChild(productDescription);
+  
+      const productPrice = document.createElement('p');
+      productPrice.textContent = `$${product.price}`;
+      productDiv.appendChild(productPrice);
+  
+      const productLink = document.createElement('a');
+      productLink.href = product.url;
+      productLink.textContent = 'Buy Now';
+      productDiv.appendChild(productLink);
+  
+      productContainer.appendChild(productDiv);
+    });
+  }
+  
